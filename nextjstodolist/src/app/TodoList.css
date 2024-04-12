@@ -31,3 +31,83 @@
     margin-bottom: 0.5rem;
     text-align: center;
 }
+
+.todo-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.todo-box input[type="text"] {
+    flex: 1;
+}
+
+.add-todo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.add-todo:hover {
+    background-color: #bdbdbd;
+}
+
+.add-todo svg {
+    color: #333;
+}
+
+.menu {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+
+.options {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.option {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.edit-mode {
+    display: flex;
+    align-items: center;
+}
+
+.save-icon {
+    margin-left: 8px;
+    /* Ajusta el margen según tu preferencia */
+}
+
+.menu-icon .svg {
+    padding: 150%;
+}
+
+.options {
+    display: flex;
+}
+
+.option {
+    margin-left: 5px;
+    margin-right: 5px;
+}
