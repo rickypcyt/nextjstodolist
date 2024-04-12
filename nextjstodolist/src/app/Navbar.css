@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #eee0d7;
+    /* Blanco con opacidad */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #333;
+    /* Gris oscuro */
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #666;
+    /* Gris más claro al pasar el mouse */
+}

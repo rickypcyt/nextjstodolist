@@ -1,52 +1,24 @@
-"use client";
-import React, { useState } from "react";
-import DarkModeToggle from "./boton"; // Importa el componente
+import React from "react";
+import "./Navbar.css"; // Importar los estilos CSS
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <nav
-      className={`bg-${darkMode ? "black" : "white"} bg-opacity-75 p-4 rounded`}
-    >
-      <ul className="flex justify-between items-center text-lg">
+    <nav className="navbar">
+      <ul className="navbar-list">
         <li>
-          <a
-            href="/"
-            className={`text-${
-              darkMode ? "white" : "gray-800"
-            } hover:text-gray-600`}
-          >
+          <a href="/" className="navbar-link">
             HOME
           </a>
         </li>
         <li>
-          <a
-            href="/about"
-            className={`text-${
-              darkMode ? "white" : "gray-800"
-            } hover:text-gray-600`}
-          >
+          <a href="/about" className="navbar-link">
             ABOUT
           </a>
         </li>
         <li>
-          <a
-            href="/contact"
-            className={`text-${
-              darkMode ? "white" : "gray-800"
-            } hover:text-gray-600`}
-          >
+          <a href="/contact" className="navbar-link">
             CONTACT
           </a>
-        </li>
-        <li>
-          <DarkModeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />{" "}
-          {/* Coloca el componente DarkModeToggle aquí */}
         </li>
       </ul>
     </nav>

@@ -1,0 +1,33 @@
+.todo-list-container {
+    margin: 1.25rem;
+}
+
+.todo-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.todo-box {
+    width: 100%;
+    background-color: #edf2f7;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
